@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Typing App</title>
+        <!-- linking Favicon Icon -->
+        <link
+            rel="shortcut icon"
+            href="./img/favicon.ico"
+            type="image/x-icon"
+        />
+        <!-- linking Google Font: Montserrat -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- linking Font Awesome -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+            rel="stylesheet"
+        />
+        <!-- linking stylesheet -->
+        <link rel="stylesheet" href="./css/style.css" />
+        <!-- linking javascript -->
+        <script src="./js/app.js" defer></script>
+    </head>
+    <body>
+        <section id="typingSection" class="typing-section">
+            <div class="row typing-result">
+                <div class="timer">
+                    <i class="fa fa-hourglass-start"></i>
+                    <span id="timerSpan"></span>
+                </div>
+                <div class="countCorrect">
+                    <i class="fa fa-check-circle"></i>
+                    <span id="correctSpan"></span>
+                </div>
+                <div class="countIncorrect">
+                    <i class="fa fa-times-circle"></i>
+                    <span id="incorrectSpan"></span>
+                </div>
+                <div class="score">
+                    <span>score: <span id="scoreSpan"></span></span>
+                </div>
+            </div>
+            <div id="typingContainer" class="row typing-container">
+                <div class="typing-display">
+                    <p id="contentEl"></p>
+                </div>
+                <div class="typing-input">
+                    <textarea id="typingInput" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="author-container">
+                <p class="author-text">
+                    build with 💜 by
+                    <a target="_blank" href="https://saminyasar.netlify.app/"
+                        >samin yasar</a
+                    >
+                </p>
+            </div>
+        </section>
+        <section id="modalSection" class="modal-section">
+            <div class="row">
+                <div class="modal-container">
+                    <h2 id="modalHeading"></h2>
+                    <p>your score is: <span id="totalScoreSpan"></span></p>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

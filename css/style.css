@@ -1,0 +1,177 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #1dd881;
+    --secondary-color: #1a5555;
+    --dancer-color: #ff523b;
+    --font-color: #fff;
+    --background-color: #033333;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    cursor: default;
+    font-size: 1.6rem;
+    font-family: "Montserrat";
+    color: var(--font-color);
+    background: var(--background-color);
+}
+
+.row {
+    width: calc(100% - 2.5rem);
+    max-width: 80rem;
+    margin: auto;
+}
+
+.typing-section {
+    width: 100%;
+    min-height: 100vh;
+    padding: 5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.typing-result {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.timer,
+.countCorrect,
+.countIncorrect {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.timer i,
+.countCorrect i,
+.countIncorrect i,
+.score i {
+    font-size: 4rem;
+    color: var(--primary-color);
+}
+
+.countIncorrect i {
+    color: var(--dancer-color);
+}
+
+.timer span,
+.countCorrect span,
+.countIncorrect span,
+.score span {
+    font-size: 2.8rem;
+    text-transform: capitalize;
+}
+
+.typing-container {
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 3rem;
+    border-radius: 0.8rem;
+    background: var(--secondary-color);
+}
+
+.typing-display {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.typing-display p {
+    font-size: 2.2rem;
+    line-height: 1.7;
+}
+
+.correct-span {
+    color: var(--primary-color);
+}
+
+.incorrect-span {
+    text-decoration: underline;
+    color: var(--dancer-color);
+}
+
+.typing-input {
+    width: 100%;
+}
+
+.typing-input textarea {
+    width: 100%;
+    resize: none;
+    outline: none;
+    padding: 1.5rem 2rem;
+    font-size: 1.8rem;
+    font-family: "Montserrat";
+    letter-spacing: 0.2rem;
+    border-radius: 0.6rem;
+    color: var(--font-color);
+    border: 0.3rem solid var(--primary-color);
+    background: transparent;
+}
+
+.author-container {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.author-text {
+    font-size: 1.7rem;
+    text-transform: capitalize;
+}
+
+.author-text a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: all 0.3s;
+}
+
+.author-text a:hover {
+    text-decoration: underline;
+}
+
+.modal-section {
+    width: 100%;
+    height: auto;
+    display: none;
+    padding: 2rem 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.modal-container {
+    width: 60%;
+    margin: auto;
+    padding: 3rem;
+    text-align: center;
+    border-radius: 0.6rem;
+    background: var(--background-color);
+}
+
+.modal-container h2 {
+    text-transform: capitalize;
+}
+
+.modal-container p {
+    margin: 2rem 0;
+    text-transform: capitalize;
+}
